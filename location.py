@@ -12,7 +12,7 @@ class Location:
     
     def __eq__(self, other):
         return((self.name == other.name) and (self.lat == other.lat)
-                and (self.lon == other.lon) )   
+                and (self.lon == other.lon))   
 
 # ADD BOILERPLATE HERE (__eq__ and __repr__ functions)
 

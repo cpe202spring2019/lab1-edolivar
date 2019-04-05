@@ -15,13 +15,9 @@ class TestLab1(unittest.TestCase):
         loc1 = Location("LA", 32.3, -13.7)
         loc3 = loc1
         self.assertEqual((loc1 == loc3), True)
-    
-    def test_eq1(self):
         loc1 = Location("LA", 32.3, -13.7)
         loc3 = Location("SLO", 35.3, -120.7)
         self.assertEqual((loc1 == loc3), False)
-    
-    def test_eq2(self):
         loc1 = Location("LA", 32.3, -13.7)
         loc3 = Location("LA", 3.2, -13.7)
         self.assertEqual((loc1 == loc3), False)
