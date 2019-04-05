@@ -2,8 +2,17 @@
 def max_list_iter(int_list):  # must use iteration not recursion
    """finds the max of a list of numbers and returns the value (not the index)
    If int_list is empty, returns None. If list is None, raises ValueError"""
-   pass
-
+   if(int_list == None):
+      raise ValueError
+   elif(len(int_list) == 0):
+      return(None)
+   else:
+      for i in range(len(int_list)):
+         if i == 0:
+            max_value = int_list[i]
+         if max_value < int_list[i]:
+            max_value = int_list[i]
+      return(max_value)
 def reverse_rec(int_list):   # must use recursion
    """recursively reverses a list of numbers and returns the reversed list
    If list is None, raises ValueError"""
